@@ -130,6 +130,22 @@ a {
     transition: color var(--transition-fast);
 }
 
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.values-list li {
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.values-list li strong {
+    color: var(--primary-color);
+}
+
+
 a:hover {
     color: var(--primary-dark);
 }

@@ -228,7 +228,9 @@ header {
     align-items: center;
     text-decoration: none;
 }
-
+#logo {
+  background-image: url("logo.png");
+}
 .logo-icon {
     background-color: var(--primary-color);
     width: 30px;

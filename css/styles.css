@@ -223,7 +223,7 @@ header {
 }
 
 /* Logo */
-.logo a {
+.logo T {
     display: flex;
     align-items: center;
     text-decoration: none;

@@ -234,6 +234,28 @@
         </div>
     </section>
 
+    
+  <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/dropdown.js"></script>
+<script>
+  // Toggle mobile dropdowns
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default link behavior
+      const parent = this.closest('.dropdown');
+      parent.classList.toggle('open');
+    });
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+
+
+          
     <!-- Services Overview Section -->
 <section class="services-overview">
     <div class="container">
@@ -487,29 +509,39 @@
             </div>
         </div>
     </footer>
+<footer>
+    <!-- Your existing footer content -->
+
+    <ul class="footer-links">
+        <li><a href="/legal">Legal</a></li>
+        <li><a href="/privacy-cookie-policy">Privacy & Cookie Policy</a></li>
+        <li><a href="/terms-of-use">Terms of Use</a></li>
+        <li><a href="/data-protection">Data Protection</a></li>
+        <li><a href="/whistleblowing">Whistleblowing</a></li>
+    </ul>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/dropdown.js"></script>
-<script>
-  // Toggle mobile dropdowns
-  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent default link behavior
-      const parent = this.closest('.dropdown');
-      parent.classList.toggle('open');
-    });
-  });
+    <script>
+        // Toggle mobile dropdowns
+        document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default link behavior
+                const parent = this.closest('.dropdown');
+                parent.classList.toggle('open');
+            });
+        });
 
-  // Optional: close dropdown when clicking outside
-  document.addEventListener('click', function (e) {
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-      }
-    });
-  });
-</script>
-
+        // Optional: close dropdown when clicking outside
+        document.addEventListener('click', function (e) {
+            document.querySelectorAll('.dropdown').forEach(dropdown => {
+                if (!dropdown.contains(e.target)) {
+                    dropdown.classList.remove('open');
+                }
+            });
+        });
+    </script>
+</footer>
 </body>
 </html>

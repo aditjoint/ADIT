@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Partners - ADAM Consult</title>
-    <meta name="description" content="Explore our strategic partnerships and collaboration opportunities at ADAM Consult.">
+    <title>Campaign - ADAM Consult</title>
+    <meta name="description" content="Our digital transformation services help businesses modernize operations, implement enterprise IT strategies, develop custom web applications, and automate processes.">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/partners.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     
-    <!-- Font Awesome -->
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Google Fonts -->
@@ -19,12 +18,11 @@
 </head>
 <body>
     <!-- Header Section -->
-     <header>
-  <header>
+    <header>
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="../index.html">
                         <div class="logo-icon">
                             <span class="letter">A</span>
                         </div>
@@ -33,20 +31,20 @@
                 </div>
                 <nav class="main-nav">
                     <ul class="nav-links">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Consult Service <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle active">Consult Service <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a href="services/technology-infrastructure.html">Technology Infrastructure</a></li>
-                                <li><a href="services/digital-transformation.html">Digital Transformation</a></li>
-                                <li><a href="services/sustainability-solutions.html">Sustainability Solutions</a></li>
-                                <li><a href="services/process-automation.html">Process Automation</a></li>
+                                <li><a href="technology-infrastructure.html">Technology Infrastructure</a></li>
+                                <li><a href="digital-transformation.html" class="active">Digital Transformation</a></li>
+                                <li><a href="sustainability-solutions.html">Sustainability Solutions</a></li>
+                                <li><a href="process-automation.html">Process Automation</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle">Current Affairs <i class="fas fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu">
+                                <ul class="dropdown-menu">
                                 <li><a href="#">News</a></li>
                                 <li><a href="#">Campaigns</a></li>
                                 <li><a href="#">Events</a></li>
@@ -56,7 +54,7 @@
                     </ul>
                 </nav>
                 <div class="cta-button">
-                    <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+                    <a href="../contact.html" class="btn btn-primary">Get In Touch</a>
                 </div>
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
@@ -64,50 +62,129 @@
             </div>
         </div>
     </header>
-    <!-- currentaffairs Section -->
-    <section class="currentaffairs-section">
+
+    <!-- Service Header Section -->
+    <section class="current affairs-header">
         <div class="container">
-            <div class="section-header">
-                <h1>Our Partners</h1>
-                <p>Strategic collaborations driving innovation and growth</p>
+            <h1>Our Consulting & Infrastructure Services</h1>
+            <p>Comprehensive solutions at the intersection of information technology, industrial automation, and energy efficiency to drive innovation and sustainable growth.</p>
+            <div class="current affairs-tabs">
+                <a href="campaign.html" class="tab-link">Campaign</a>
+                <a href="news.html" class="tab-link active">News</a>
+                <a href="events.html" class="tab-link">Events</a>
+                <a href="projects.html" class="tab-link">Prjects</a>
             </div>
-            <div class="partners-grid">
-                <div class="partner-card">
-                    <div class="partner-content">
-                        <h3>KMG Australia</h3>
-                        <p class="partner-type">Strategic Partner</p>
-                        <p class="partner-website"><a href="https://kmgaustralia.com" target="_blank">kmgaustralia.com</a></p>
-                        <p class="partner-focus"><strong>Focus:</strong> Engineering, Procurement & Project Development</p>
-                        <div class="partner-about">
-                            <h4>About:</h4>
-                            <p> As a strategic partner, KMG supports turnkey execution, project structuring, and local compliance in Australia and international markets.
+        </div>
+    </section>
 
-Campaign-1 
-Project Management and consultancy; 
-</div>
-         <!-- Current Affairs Dropdown -->
-<li class="dropdown">
-  <a href="#">Current Affairs ▾</a>
-  <ul class="dropdown-menu">
-    <li><a href="/news.html">News</a></li>
-    <li><a href="/campaigns.html">Campaign</a></li>
-    <li><a href="/events.html">Events</a></li>
-    <li><a href="/progress.html">Progress</a></li>
-  </ul>
-</li>
+    <!-- Current Affairs Detailed Section -->
+    <section class="currentaffairs-details">
+        <div class="container">
+            <h2>Digital Transformation</h2>
+            <p class="service-summary">Advanced digital solutions to transform your business operations and technology landscape.</p>
+            
+            <div class="service-grid">
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Enterprise IT Strategy</h3>
+                        <p>Strategic planning and implementation of comprehensive IT solutions for your organization.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> IT Infrastructure Assessment & Planning</li>
+                            <li><i class="fas fa-check-circle"></i> Hybrid Cloud Strategy & Migration</li>
+                            <li><i class="fas fa-check-circle"></i> Digital Workspace Solutions</li>
+                            <li><i class="fas fa-check-circle"></i> Enterprise Application Integration</li>
+                        </ul>
+                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Web Application Engineering</h3>
+                        <p>Custom web applications that streamline business processes and enhance operational efficiency.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Custom Web Application Development</li>
+                            <li><i class="fas fa-check-circle"></i> Process Automation Solutions</li>
+                            <li><i class="fas fa-check-circle"></i> Integration With Existing Systems</li>
+                            <li><i class="fas fa-check-circle"></i> User-Centric Interface Design</li>
+                        </ul>
+                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Process Automation</h3>
+                        <p>Reduce repetitive and manual tasks with our intelligent automation solutions.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Workflow Automation Solutions</li>
+                            <li><i class="fas fa-check-circle"></i> Document processing and management systems</li>
+                            <li><i class="fas fa-check-circle"></i> Data collection, transformation, and analysis pipelines</li>
+                            <li><i class="fas fa-check-circle"></i> AI/ML-enhanced process applications</li>
+                        </ul>
+                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Industrial Automation & IoT</h3>
+                        <p>Drive industrial innovation through the convergence of IT and control systems.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Industrial Process Automation</li>
+                            <li><i class="fas fa-check-circle"></i> IoT-based Monitoring & Control</li>
+                            <li><i class="fas fa-check-circle"></i> PLC, HMI, SCADA Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Edge Computing Automation</li>
+                        </ul>
+                        <a href="../contact.html" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+                
+                <div class="service-item">
+                    <div class="icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Hardware Products & Solutions</h3>
+                        <p>Comprehensive range of hardware solutions to complement our IT consultancy services.</p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i> Audio-Visual Systems & Digital Signage</li>
+                            <li><i class="fas fa-check-circle"></i> System Management Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Enterprise Computing Hardware</li>
+                            <li><i class="fas fa-check-circle"></i> Network Infrastructure & Security</li>
+                        </ul>
+                        <a href="../contact.html" class="btn btn-secondary">View Hardware Solutions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        <!-- Current Affairs Footer Links -->
-<ul class="footer-links">
-  <li><a href="/news.html">News</a></li>
-  <li><a href="/campaigns.html">Campaign</a></li>
-  <li><a href="/events.html">Events</a></li>
-  <li><a href="/progress.html">Progress</a></li>
-</ul>
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Infrastructure?</h2>
+                <p>Contact us today to discuss how our technology and engineering solutions can help your organization achieve efficiency, sustainability, and innovation.</p>
+                <a href="../contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
 
-              
     <!-- Footer -->
- <!-- Footer -->
-    <footer>
+  <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
@@ -179,9 +256,8 @@ Project Management and consultancy;
         </div>
     </footer>
 
-         <!-- Scripts -->
+    <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/dropdown.js"></script>
-    <script src="js/partner-enrollment.js"></script>
 </body>
 </html>

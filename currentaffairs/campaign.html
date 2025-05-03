@@ -5,16 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Transformation Services - ADAM Consult</title>
     <meta name="description" content="Our digital transformation services help businesses modernize operations, implement enterprise IT strategies, develop custom web applications, and automate processes.">
-    
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/responsive.css">
-    
+
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            z-index: 1000;
+        }
+        .dropdown:hover .dropdown-menu,
+        .dropdown-menu.show {
+            display: block;
+        }
+        .dropdown-menu li {
+            list-style: none;
+        }
+        .dropdown-menu li a {
+            display: block;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #333;
+        }
+        .dropdown-menu li a:hover {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
@@ -36,15 +62,15 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle">Consult Service <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
-                                    <li><a href="technology-infrastructure.html">Technology Infrastructure</a></li>
-                                    <li><a href="digital-transformation.html">Digital Transformation</a></li>
-                                    <li><a href="sustainability-solutions.html">Sustainability Solutions</a></li>
-                                    <li><a href="process-automation.html">Process Automation</a></li>
+                                <li><a href="technology-infrastructure.html">Technology Infrastructure</a></li>
+                                <li><a href="digital-transformation.html">Digital Transformation</a></li>
+                                <li><a href="sustainability-solutions.html">Sustainability Solutions</a></li>
+                                <li><a href="process-automation.html">Process Automation</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle">Current Affairs <i class="fas fa-chevron-down"></i></a>
-                                <ul class="dropdown-menu">
+                            <ul class="dropdown-menu">
                                 <li><a href="./currentaffairs/news.html">News</a></li>
                                 <li><a href="./currentaffairs/campaign.html">Campaigns</a></li>
                                 <li><a href="./currentaffairs/events.html">Events</a></li>
@@ -62,52 +88,15 @@
             </div>
         </div>
     </header>
- <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1Campaign Section</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .campaign-section {
-            background-color: #ff8c00;
-            color: white;
-            padding: 10px 10px;
-            text-align: center;
-            border-bottom: 5px solid #333;
-        }
-        .campaign-title {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        .campaign-description {
-            font-size: 18px;
-            margin-bottom: 30px;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-    
-        .campaign-image {
-            margin-top: 30px;
-        }
-        .campaign-image img {
-            max-width: 30%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
 
-    <section class="campaign-section">
-        <h2 class="campaign-title">Join Our Exciting Partnership Campaign!</h2>
-        <p class="campaign-description">Help us make a difference. Your support goes a long way in creating lasting change. We are excited to have you with us as we embark on this journey of growth and transformation.</p>
+    <!-- Campaign Section -->
+    <section class="campaign-section" style="background-color: #ff8c00; color: white; padding: 10px 10px; text-align: center; border-bottom: 5px solid #333;">
+        <h2 class="campaign-title" style="font-size: 36px; margin-bottom: 20px;">Join Our Exciting Partnership Campaign!</h2>
+        <p class="campaign-description" style="font-size: 18px; margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto;">
+            Help us make a difference. Your support goes a long way in creating lasting change. We are excited to have you with us as we embark on this journey of growth and transformation.
+        </p>
         <a href="../contact.html" class="btn btn-primary"> Get Involved - Contact Us</a>
     </section>
-  </header>
 
     <!-- Footer -->
     <footer>
@@ -120,17 +109,16 @@
                         </div>
                         <span class="logo-text">ADAM Consult</span>
                     </div>
-                    <p>Adam Consult is a strategic gateway and modular collaboration hub that empowers cross-sector innovation. By uniting investors, partners, consultants, and customers in a unified ecosystem, it enables high-impact partnerships that drive efficiency, connectivity, and long-term value across industries. It accelerates industrial intelligence through advanced data solutions and digital integration.</p>
-                 
-  <div class="social-links">
-    <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
-  </div>
-
+                    <p>Adam Consult is a strategic gateway and modular collaboration hub that empowers cross-sector innovation...</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
+
                 <div class="footer-links">
                     <div class="link-group">
                         <h3>Quick Links</h3>
@@ -147,18 +135,16 @@
                             <li><a href="#">Resources</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
-
                     </div>
+
                     <div class="link-group">
                         <h3>Legal</h3>
-                                <p>
-                                    <p><a href="termsofuse.html">Terms of Use</a></p></p>
-                                    <p><a href="dataprotection.html">Data Protection Policy</a></p>
-                                    <p><a href="whistleblowing.html">Whistleblowing Policy</a></p>
-                                    <p><a href="privacy&cookies.html">Privacy & Cookie Policy</a></p>
-                                 </p>
-
+                        <p><a href="termsofuse.html">Terms of Use</a></p>
+                        <p><a href="dataprotection.html">Data Protection Policy</a></p>
+                        <p><a href="whistleblowing.html">Whistleblowing Policy</a></p>
+                        <p><a href="privacy&cookies.html">Privacy & Cookie Policy</a></p>
                     </div>
+
                     <div class="link-group">
                         <h3>Contact Us</h3>
                         <div class="footer-contact-grid">
@@ -166,9 +152,9 @@
                                 <i class="fas fa-map-marker-alt"></i>
                                 <span>SaiKrupa, Sector-27, Navi Mumbai-400706</span>
                             </a>
-                            <a href="tel:+91-8080280801(direct), 8779639965 (whatsapp)" class="contact-item">
+                            <a href="tel:+91-8080280801" class="contact-item">
                                 <i class="fas fa-phone-alt"></i>
-                                <span>+91-8080280801(direct), 8779639965(whatsapp)</span>
+                                <span>+91-8080280801 (Direct), 8779639965 (WhatsApp)</span>
                             </a>
                             <a href="mailto:adamconsultservice@gmail.com" class="contact-item">
                                 <i class="fas fa-envelope"></i>
@@ -184,8 +170,35 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/dropdown.js"></script>
+    <!-- Dropdown Toggle Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+        dropdownToggles.forEach(toggle => {
+            toggle.addEventListener('click', function (e) {
+                e.preventDefault();
+                const dropdownMenu = this.nextElementSibling;
+                dropdownMenu.classList.toggle('show');
+
+                // Close other dropdowns
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    if (menu !== dropdownMenu) {
+                        menu.classList.remove('show');
+                    }
+                });
+            });
+        });
+
+        // Optional: close dropdowns if clicked outside
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.dropdown')) {
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.classList.remove('show');
+                });
+            }
+        });
+    });
+    </script>
 </body>
 </html>

@@ -1638,12 +1638,3 @@ footer {
     margin-bottom: 0;
     font-size: var(--font-size-sm);
 }
-
-<style>
-    /* Keep existing styles ... */
-
-    /* ADD THIS LINE to make headers bold */
-    h2, h3 {
-        font-weight: bold;
-    }
-</style>

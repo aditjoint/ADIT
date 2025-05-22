@@ -1,80 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Transformation Services - ADAM Consult</title>
-    <meta name="description" content="Our digital transformation services help businesses modernize operations, implement enterprise IT strategies, develop custom web applications, and automate processes.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Set-1 Corrected Header Alignment - ADAM Consult</title>
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    />
 
-<style>
-    .campaign-section {
-        background-color: #ff8c00;
-        color: #fff;
-        padding: 10px 10px;
-        text-align: center;
-        border-bottom: 5px solid #333;
-    }
+    <style>
+        /* Container to center content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    .campaign-section .campaign-title {
-        font-size: 36px;
-        margin-bottom: 20px;
-    }
+        /* Header base */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
 
-    .campaign-section .campaign-description {
-        font-size: 18px;
-        margin-bottom: 30px;
-        max-width: 700px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+        /* Flex container for header content */
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 70px;
+        }
 
-    .campaign-section .campaign-image {
-        margin-top: 30px;
-    }
+        /* Logo styling */
+        .logo {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 24px;
+            color: #007bff;
+            text-decoration: none;
+        }
 
-    .campaign-section .campaign-image img {
-        max-width: 30%;
-        height: auto;
-    }
-</style>
+        .logo-icon {
+            background-color: #007bff;
+            color: white;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 700;
+            border-radius: 4px;
+            margin-right: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo-text {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        /* Main navigation styles */
+        nav.main-nav ul.nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav.main-nav ul.nav-links li {
+            position: relative;
+            margin-left: 30px;
+        }
+
+        nav.main-nav ul.nav-links li:first-child {
+            margin-left: 0;
+        }
+
+        nav.main-nav ul.nav-links li a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 0;
+            display: inline-block;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Dropdown toggle caret */
+        .dropdown-toggle i {
+            margin-left: 5px;
+            font-size: 0.8em;
+        }
+
+        /* Dropdown menu */
+        ul.dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            padding: 10px 0;
+            min-width: 180px;
+            z-index: 1000;
+        }
+
+        ul.dropdown-menu li {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.dropdown-menu li a {
+            padding: 10px 20px;
+            display: block;
+            color: #333;
+            font-weight: 400;
+        }
+
+        ul.dropdown-menu li a:hover {
+            background-color: #f0f8ff;
+            color: #007bff;
+        }
+
+        /* Show dropdown on hover */
+        .nav-links li:hover > ul.dropdown-menu {
+            display: block;
+        }
+
+        /* Call-to-action button */
+        .cta-button a.btn-primary {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button a.btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Mobile menu toggle - hidden on desktop */
+        .mobile-menu-toggle {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        /* Responsive: show mobile menu icon on small screens */
+        @media (max-width: 768px) {
+            nav.main-nav ul.nav-links {
+                display: none;
+            }
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <a href="../index.html">
-                        <div class="logo-icon"><span class="letter">A</span></div>
-                        <span class="logo-text">ADAM Consult</span>
-                    </a>
-                </div>
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="letter">A</span>
+                    </div>
+                    <span class="logo-text">ADAM Consult</span>
+                </a>
+
                 <nav class="main-nav">
                     <ul class="nav-links">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="../about.html">About</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Consult Service <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle">
+                                Consult Service <i class="fas fa-chevron-down"></i>
+                            </a>
                             <ul class="dropdown-menu">
-                                <li><a href="../services/technology-infrastructure.html">Technology Infrastructure</a></li>
+                                <li>
+                                    <a href="../services/technology-infrastructure.html">Technology Infrastructure</a>
+                                </li>
                                 <li><a href="../services/digital-transformation.html">Digital Transformation</a></li>
                                 <li><a href="../services/sustainability-solutions.html">Sustainability Solutions</a></li>
                                 <li><a href="../services/process-automation.html">Process Automation</a></li>
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle">Current Affairs <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="dropdown-toggle">
+                                Current Affairs <i class="fas fa-chevron-down"></i>
+                            </a>
                             <ul class="dropdown-menu">
                                 <li><a href="../currentaffairs/news.html">News</a></li>
                                 <li><a href="../currentaffairs/campaign.html">Campaigns</a></li>
@@ -84,9 +212,11 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div class="cta-button">
                     <a href="../contact.html" class="btn btn-primary">Get In Touch</a>
                 </div>
+
                 <div class="mobile-menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -94,70 +224,9 @@
         </div>
     </header>
 
-    <!-- Campaign Section -->
-    <section class="campaign-section">
-        <h2 class="campaign-title">Join Our Exciting Partnership Campaign!</h2>
-        <p class="campaign-description">Help us make a difference. Your support goes a long way in creating lasting change. We are excited to have you with us as we embark on this journey of growth and transformation.</p>
-        <a href="../contact.html" class="btn btn-primary"> Get Involved - Contact Us</a>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <div class="logo-icon"><span class="letter">A</span></div>
-                        <span class="logo-text">ADAM Consult</span>
-                    </div>
-                    <p>ADAM Consult is a strategic gateway and modular collaboration hub that empowers cross-sector innovation...</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
-                        <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/yourprofile" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <div class="link-group">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="../../index.html">Home</a></li>
-                            <li><a href="../../services/technology-infrastructure.html">Services</a></li>
-                            <li><a href="../../about.html">About Us</a></li>
-                            <li><a href="../../advisors.html">Advisors</a></li>
-                            <li><a href="../../partners.html">Partners</a></li>
-                            <li><a href="../../investment">Investor Portfolio</a></li>
-                            <li><a href="../../resources">Resources</a></li>
-                            <li><a href="../../contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="link-group">
-                        <h3>Legal</h3>
-                        <p><a href="../termsofuse.html">Terms of Use</a></p>
-                        <p><a href="../dataprotection.html">Data Protection Policy</a></p>
-                        <p><a href="../whistleblowing.html">Whistleblowing Policy</a></p>
-                        <p><a href="../privacy&cookies.html">Privacy & Cookie Policy</a></p>
-                    </div>
-                    <div class="link-group">
-                        <h3>Our Location</h3>
-                        <div class="footer-contact-grid">
-                            <a href="https://www.google.com/maps?q=Navi+Mumbai,+India" class="contact-item" target="_blank"><i class="fas fa-map-marker-alt"></i> Navi Mumbai, India</a>
-                            <a href="tel:+91-2235667733" class="contact-item"><i class="fas fa-phone-alt"></i> +91-2235667733</a>
-                            <a href="mailto:adamconsultservice@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> adamconsultservice@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 ADAM Consult, ADIT Joint LLP. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="js/main.js"></script>
-    <script src="js/dropdown.js"></script>
+    <main>
+        <!-- Page content here -->
+        <h1 style="text-align:center; margin-top: 40px;">Page Content Placeholder</h1>
+    </main>
 </body>
 </html>
